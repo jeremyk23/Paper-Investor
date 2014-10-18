@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="PortfolioType" syncable="YES">
+        <attribute name="label" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="stocks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="StockItem" inverseName="portfolioType" inverseEntity="StockItem" syncable="YES"/>
+    </entity>
+    <entity name="StockItem" representedClassName="StockItem" syncable="YES">
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currentPrice" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="currentPriceFormatted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="orderingValue" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="percentChange" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="portfolioString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="positive" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="pricePaid" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pricePaidFormatted" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sharesBought" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="stockName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="portfolioType" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="PortfolioType" inverseName="stocks" inverseEntity="PortfolioType" syncable="YES"/>
+    </entity>
+    <entity name="UserPortfolio" representedClassName="UserPortfolio" syncable="YES">
+        <attribute name="currentFunds" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="descriptionOfPortfolio" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="initialFunds" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="percentChange" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="PortfolioType" positionX="160" positionY="192" width="128" height="75"/>
+        <element name="StockItem" positionX="160" positionY="192" width="128" height="240"/>
+        <element name="UserPortfolio" positionX="160" positionY="192" width="128" height="135"/>
+    </elements>
+</model>

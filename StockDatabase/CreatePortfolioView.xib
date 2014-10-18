@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12F37" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CreatePortfolioView">
+            <connections>
+                <outlet property="createPortfolioButton" destination="179" id="192"/>
+                <outlet property="exampleText" destination="194" id="201"/>
+                <outlet property="fundField" destination="86" id="97"/>
+                <outlet property="initialFundLabel" destination="18" id="193"/>
+                <outlet property="namePortfolioLabel" destination="4" id="208"/>
+                <outlet property="portfolioNameField" destination="91" id="96"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <userGuides>
+                <userLayoutGuide location="240" affinity="minX"/>
+                <userLayoutGuide location="81" affinity="minX"/>
+                <userLayoutGuide location="159" affinity="minX"/>
+                <userLayoutGuide location="312" affinity="minY"/>
+                <userLayoutGuide location="104" affinity="minY"/>
+                <userLayoutGuide location="205" affinity="minY"/>
+            </userGuides>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Name Your Portfolio:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4">
+                    <rect key="frame" x="20" y="20" width="280" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                    <color key="textColor" red="0.9450981021" green="0.98431378599999997" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Choose Initial Fund Amount" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                    <rect key="frame" x="20" y="159" width="280" height="24"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
+                    <color key="textColor" red="0.9450981021" green="0.98431378599999997" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86">
+                    <rect key="frame" x="20" y="191" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.35294118520000001" green="0.43921571970000001" blue="0.47843140360000003" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="158"/>
+                    </connections>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="91">
+                    <rect key="frame" x="20" y="48" width="280" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="textColor" red="0.35294118520000001" green="0.43921571970000001" blue="0.47843140360000003" alpha="1" colorSpace="deviceRGB"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" enablesReturnKeyAutomatically="YES"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="157"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="179">
+                    <rect key="frame" x="80" y="463" width="160" height="44"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="160" id="188"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="25"/>
+                    <size key="titleShadowOffset" width="0.0" height="1"/>
+                    <state key="normal" title="Create Portfolio" backgroundImage="lightGreenButtonBottomBorder.png">
+                        <color key="titleColor" red="0.9450981021" green="0.98431378599999997" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="titleShadowColor" red="0.42686456439999998" green="0.55354696510000001" blue="0.1790077239" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="createPortfolio:" destination="-1" eventType="touchUpInside" id="212"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Enter a portfolio title to get started. For example, &quot;High Growth&quot; or &quot;Value Investing&quot;." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="194">
+                    <rect key="frame" x="20" y="81" width="280" height="55"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                    <color key="textColor" red="0.34249761449999999" green="0.34249761449999999" blue="0.34249761449999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="86" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="160"/>
+                <constraint firstItem="18" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="161"/>
+                <constraint firstItem="4" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="165"/>
+                <constraint firstItem="91" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="166"/>
+                <constraint firstAttribute="trailing" secondItem="91" secondAttribute="trailing" constant="20" symbolic="YES" id="167"/>
+                <constraint firstAttribute="trailing" secondItem="4" secondAttribute="trailing" constant="20" symbolic="YES" id="168"/>
+                <constraint firstAttribute="trailing" secondItem="86" secondAttribute="trailing" constant="20" symbolic="YES" id="169"/>
+                <constraint firstAttribute="trailing" secondItem="18" secondAttribute="trailing" constant="20" symbolic="YES" id="170"/>
+                <constraint firstItem="86" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="8" symbolic="YES" id="171"/>
+                <constraint firstItem="86" firstAttribute="top" secondItem="18" secondAttribute="bottom" constant="8" id="173"/>
+                <constraint firstItem="91" firstAttribute="top" secondItem="4" secondAttribute="bottom" constant="4" id="177"/>
+                <constraint firstItem="179" firstAttribute="centerX" secondItem="86" secondAttribute="centerX" id="187"/>
+                <constraint firstAttribute="bottom" secondItem="179" secondAttribute="bottom" constant="61" id="190"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="179" secondAttribute="bottom" constant="61" id="191"/>
+                <constraint firstItem="194" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="20" symbolic="YES" id="196"/>
+                <constraint firstAttribute="trailing" secondItem="194" secondAttribute="trailing" constant="20" symbolic="YES" id="200"/>
+                <constraint firstItem="4" firstAttribute="top" secondItem="1" secondAttribute="top" constant="20" symbolic="YES" id="209"/>
+                <constraint firstItem="18" firstAttribute="top" secondItem="1" secondAttribute="top" constant="159" id="210"/>
+                <constraint firstItem="194" firstAttribute="top" secondItem="1" secondAttribute="top" constant="81" id="211"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lightGreenButtonBottomBorder.png" width="145" height="44"/>
+    </resources>
+</document>

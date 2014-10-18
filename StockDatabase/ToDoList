@@ -1,0 +1,40 @@
+MANDATORY*----------------------------
+
+If user logs out at detailViewController, it logs the stock as purchased for infiniti. - do in didResignWithOptions
+
+Have timeout function if it's trying to show trend chart and it spins for too long.
+
+BUG LIST*------------------------------
+
+-Choose Portfolio Slider doesn't set the portfolio if you pull it up and leave it still.
+
+
+
+Optional*--------
+-alert them with a popup of company name when they finish typing it
+
+
+    
+-NOTES
+Core data sets up relational database. THIS RD has a TABLE. Table represents a type; say a person. Each column represents something like their name, age, SSID, ect. Each row is a new person. 
+-Model file is the whole CoreData file that stores all info and properties and relationships and what not.
+
+Each table in Objective C (called an ENTITY), is like an object: columns or instance variables, (these are the Entity's ATTRIBUTES).
+
+-Each StockItem has a to-one relationship with the PortfolioType. (It can only belong to one PortfolioType.) 
+    -Each PortfolioType has a to-many relationship because it can refer to multiple stock items. 
+    -This way we can ask StockItem "What SINGLE thing is your type" and vice versa, ask PorftolioTypes, "What MANY stocks do you hold?"
+    
+-When an object is fetched with core data, its class is by default NSManagedObject, (a subset of NSObject).
+    -by changing StockItem's class to StockItem in the model file, I made it so when it is fetched, it will be a StockItem, NOT An NSManagedObject. The PortfolioType is still an NSManaged object.
+
+
+iPhone3        320x480  163 ppi
+iPhone4        640×960  326 ppi 
+iPhone4S       640×960  326 ppi 
+iPhone5        640×1136 326 ppi 
+iPad          1024x768  132 ppi
+iPad2         1024x768  132 ppi
+iPad (3gen)   2048x1536 264 ppi
+iPad (4gen)   2048x1536 264 ppi
+iPad mini     1024x768  163 ppi
